@@ -96,3 +96,9 @@ footer{
     font-size:15px;
 
 }
+.logo{
+display:block;
+width:90px;
+height:auto;
+margin:0 auto 15px;
+}
