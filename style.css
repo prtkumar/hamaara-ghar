@@ -158,3 +158,19 @@ h1{
     text-align: center;
     font-size: 1.08rem;
 }
+
+.tagline{
+
+text-align:center;
+
+font-size:18px;
+
+letter-spacing:2px;
+
+color:#6b7280;
+
+margin-top:-10px;
+
+margin-bottom:30px;
+
+}
