@@ -118,6 +118,8 @@ p, li{
     line-height:1.8;
 }
 
+
+
 hr{
     border:none;
     border-top:1px solid #dddddd;
@@ -140,4 +142,19 @@ h1{
     font-size:28px;
 }
 
+}
+
+.subtitle{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #2f6b3b;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.box p{
+    line-height: 1.9;
+    text-align: center;
+    font-size: 1.08rem;
 }
