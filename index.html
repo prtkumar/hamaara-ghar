@@ -1,101 +1,173 @@
 <!DOCTYPE html>
 <html lang="hi">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>हमारा घर</title>
-  <meta name="description" content="विचार, मौन, अध्ययन, सृजन और संवाद को एक साथ रखने वाला एक जीवित घर।">
+<meta charset="UTF-8">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- बाकी पृष्ठों की पुरानी CSS को नहीं छेड़ा गया है। -->
-  <link rel="stylesheet" href="home.css">
+<title>हमारा घर</title>
+
+<link rel="icon" type="image/png" href="logo.png">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="हमारा घर — मुख्य पृष्ठ">
-      <img
-        src="./logo.png"
-        alt="हमारा घर"
-        onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
-      >
-      <span class="brand-fallback" aria-hidden="true">घ</span>
-    </a>
 
-    <a class="main-door-button" href="index.html">← मुख्य द्वार</a>
-  </header>
+<header class="topbar">
 
-  <main>
-    <section class="intro-section" aria-labelledby="page-title">
-      <p class="eyebrow">एक जीवित गृह-मॉडल</p>
-      <h1 id="page-title">हमारा घर</h1>
-      <p class="intro-text">
-        यह केवल कमरों का नक्शा नहीं—विचार, मौन, अध्ययन, सृजन और संवाद को
-        एक साथ रखने वाला घर है।
-      </p>
-    </section>
+<a href="index.html" class="brand">
 
-    <section class="house-stage" aria-label="हमारा घर के कक्ष">
-      <div class="house-card">
-        <div class="sun" aria-hidden="true"></div>
+<img src="logo.png" alt="हमारा घर">
 
-        <div class="roof" aria-hidden="true">
-          <div class="roof-lines"></div>
-          <span class="roof-name">हमारा घर</span>
-        </div>
+<span>हमारा घर</span>
 
-        <div class="house-body">
-          <!-- जिन पृष्ठों की फाइल अभी नहीं बनी है, उनके href को # रखा गया है। -->
-          <a class="room room-darshan" href="#" aria-label="दर्शन">
-            <span class="room-icon sparkle-icon" aria-hidden="true">✨</span>
-            <span class="room-title">दर्शन</span>
-          </a>
+</a>
 
-          <a class="room room-courtyard" href="angan.html">
-            <span class="tree-mark" aria-hidden="true">
-              <span class="tree-crown tree-crown-one"></span>
-              <span class="tree-crown tree-crown-two"></span>
-              <span class="tree-crown tree-crown-three"></span>
-              <span class="tree-trunk"></span>
-              <span class="tree-shadow"></span>
-            </span>
-            <span class="room-title">जीवित आँगन</span>
-            <span class="room-note">जहाँ सभी कक्ष मिलते हैं</span>
-          </a>
+<button class="menu-btn" onclick="toggleMenu()">
 
-          <a class="room room-beej" href="beej.html" aria-label="बीज">
-            <span class="room-icon" aria-hidden="true">🌱</span>
-            <span class="room-title">बीज</span>
-          </a>
+☰
 
-          <a class="room room-library" href="library.html" aria-label="पुस्तकालय">
-            <span class="room-icon" aria-hidden="true">📚</span>
-            <span class="room-title">पुस्तकालय</span>
-          </a>
+</button>
 
-          <a class="room room-silence" href="maun.html" aria-label="मौन">
-            <span class="silence-circle" aria-hidden="true"></span>
-            <span class="room-title">मौन</span>
-          </a>
+</header>
 
-          <a class="room room-dialogue" href="samvaad.html" aria-label="संवाद">
-            <span class="dialogue-icon" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </span>
-            <span class="room-title">संवाद</span>
-          </a>
-        </div>
 
-        <a class="entrance" href="about.html" aria-label="परिचय — घर को जानने का प्रवेश-द्वार">
-          <span class="entrance-title">परिचय</span>
-          <span class="entrance-note">घर को जानने का प्रवेश-द्वार</span>
-        </a>
-      </div>
-    </section>
-  </main>
+
+<nav id="menu" class="menu">
+
+<a href="index.html">🏡 मुख्य द्वार</a>
+
+<a href="darshan.html">✨ दर्शन</a>
+
+<a href="angan.html">🌳 जीवित आँगन</a>
+
+<a href="beej.html">🌱 बीज</a>
+
+<a href="library.html">📚 पुस्तकालय</a>
+
+<a href="maun.html">⭕ मौन</a>
+
+<a href="samvaad.html">💬 संवाद</a>
+
+<a href="about.html">🤝 परिचय</a>
+
+</nav>
+
+
+
+<section class="hero">
+
+<img src="logo.png" class="hero-logo">
+
+<p class="small-title">
+
+एक जीवित गृह-मॉडल
+
+</p>
+
+<h1>
+
+हमारा घर
+
+</h1>
+
+<p class="hero-text">
+
+यह केवल कमरों का नक्शा नहीं—
+
+विचार, मौन, अध्ययन,
+
+सृजन और संवाद
+
+को एक साथ रखने वाला घर है।
+
+</p>
+
+</section>
+
+
+
+<section class="house">
+
+<div class="roof">
+
+<div class="roof-title">
+
+हमारा घर
+
+</div>
+
+</div>
+
+
+
+<div class="rooms">
+
+  <a class="room" href="darshan.html">
+<div class="icon">✨</div>
+<h3>दर्शन</h3>
+</a>
+
+<a class="room" href="angan.html">
+<div class="icon">🌳</div>
+<h3>जीवित आँगन</h3>
+<p>जहाँ सभी कक्ष मिलते हैं</p>
+</a>
+
+<a class="room" href="beej.html">
+<div class="icon">🌱</div>
+<h3>बीज</h3>
+</a>
+
+<a class="room" href="library.html">
+<div class="icon">📚</div>
+<h3>पुस्तकालय</h3>
+</a>
+
+<a class="room" href="maun.html">
+<div class="icon">⭕</div>
+<h3>मौन</h3>
+</a>
+
+<a class="room" href="samvaad.html">
+<div class="icon">💬</div>
+<h3>संवाद</h3>
+</a>
+
+</div>
+
+<a class="about-door" href="about.html">
+
+<h2>परिचय</h2>
+
+<p>घर को जानने का प्रवेश-द्वार</p>
+
+</a>
+
+</section>
+
+  <footer>
+
+<hr>
+
+<p>🌿 हमारा घर</p>
+
+<p>
+<a href="https://hamaaraghar.online">
+hamaaraghar.online
+</a>
+</p>
+
+<p>© 2026 हमारा घर</p>
+
+</footer>
+
+</div>
+
 </body>
+
 </html>
