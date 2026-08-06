@@ -186,3 +186,47 @@ font-size:20px;
 color:#4d3600;
 
 }
+
+/*=========================
+  DOOR OPEN
+=========================*/
+
+.arch.open{
+
+transform:scale(.98);
+
+opacity:0;
+
+filter:brightness(1.8);
+
+transition:
+
+opacity 1.8s ease,
+
+transform 1.8s ease,
+
+filter 1.8s ease;
+
+}
+
+.hero.light{
+
+background:
+
+radial-gradient(
+
+circle,
+
+#fff8d7 0%,
+
+#f6df8b 25%,
+
+#d2a53a 55%,
+
+#6b4712 100%
+
+);
+
+transition:2.2s;
+
+}
