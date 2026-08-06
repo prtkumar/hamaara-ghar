@@ -85,3 +85,104 @@ body{
     color:#5f5646;
 
 }
+
+/*=========================
+  GOLDEN GATE
+=========================*/
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:#0d0b08;
+
+}
+
+#gate{
+
+width:min(92vw,520px);
+
+aspect-ratio:1/1.45;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.arch{
+
+width:100%;
+
+height:100%;
+
+border-radius:260px 260px 40px 40px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+cursor:pointer;
+
+background:linear-gradient(
+180deg,
+#fff4b5 0%,
+#f5cf63 18%,
+#d9a62d 42%,
+#9a6a14 72%,
+#5f3d09 100%
+);
+
+box-shadow:
+
+0 0 60px rgba(255,215,120,.35),
+
+inset 0 0 25px rgba(255,255,255,.35),
+
+inset 0 -20px 35px rgba(0,0,0,.35);
+
+transition:.8s;
+
+}
+
+.arch:hover{
+
+transform:scale(1.02);
+
+box-shadow:
+
+0 0 90px rgba(255,220,130,.55),
+
+inset 0 0 35px rgba(255,255,255,.45);
+
+}
+
+.arch h1{
+
+font-size:clamp(42px,7vw,70px);
+
+color:#5b3a00;
+
+margin-bottom:22px;
+
+}
+
+.arch p{
+
+font-size:20px;
+
+color:#4d3600;
+
+}
