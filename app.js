@@ -24,8 +24,18 @@ const World = {
     currentRoom: "gate"
 };
 
-function enterHome() {
-    World.entered = true;
-    World.state = "path";
-    console.log("घर का द्वार खुल गया।");
+function enterHome(){
+
+const gate = document.querySelector(".arch");
+const hero = document.querySelector(".hero");
+
+gate.classList.add("open");
+hero.classList.add("light");
+
+setTimeout(()=>{
+
+alert("यहाँ से हमारा घर आरम्भ होगा।");
+
+},1800);
+
 }
