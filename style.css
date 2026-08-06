@@ -1,7 +1,7 @@
-/* ===========================
+/* ==========================================
    हमारा घर
-   style.css
-=========================== */
+   Version 2.0
+========================================== */
 
 *{
     margin:0;
@@ -10,167 +10,183 @@
 }
 
 body{
-
-    background:#FAF7F2;
-
-    color:#2F2F2F;
-
-    font-family:Georgia, serif;
-
-    line-height:1.9;
-
-    font-size:20px;
-
-    padding:40px 22px;
-
+    background:#f7f4ed;
+    color:#2d3a2f;
+    font-family:"Noto Serif Devanagari", serif;
 }
 
 .container{
-
-    max-width:800px;
-
+    max-width:900px;
     margin:auto;
-
+    padding:24px;
 }
 
-h1{
+/* ---------- Header ---------- */
 
-    font-size:42px;
-
+.hero{
     text-align:center;
-
-    margin-bottom:25px;
-
+    padding-top:30px;
 }
 
-h2{
-
-    margin-top:45px;
-
-    margin-bottom:15px;
-
+.hero-logo{
+    width:90px;
+    display:block;
+    margin:auto;
 }
 
-p{
-
-    margin:18px 0;
-
-}
-
-a{
-
-    color:#856404;
-
-    text-decoration:none;
-
+.hero-small{
+    margin-top:28px;
+    font-size:18px;
+    color:#a3823d;
     font-weight:bold;
-
 }
 
-a:hover{
-
-    text-decoration:underline;
-
+.hero h1{
+    margin-top:12px;
+    font-size:58px;
+    color:#294233;
 }
 
-.card{
-
-    background:white;
-
-    border-radius:18px;
-
-    padding:35px;
-
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
-
-}
-
-footer{
-
-    margin-top:60px;
-
-    text-align:center;
-
-    opacity:.65;
-
-    font-size:15px;
-
-}
-.logo{
-display:block;
-width:90px;
-height:auto;
-margin:0 auto 15px;
-}
-
-h1{
-    text-align:center;
-    font-size:34px;
-    color:#1f3d2f;
-    margin-top:10px;
-}
-
-h2{
-    color:#1f3d2f;
-}
-
-p, li{
+.hero-text{
+    margin:28px auto 40px;
+    max-width:720px;
+    font-size:28px;
     line-height:1.8;
+    color:#666;
 }
 
+/* ---------- House ---------- */
 
-
-hr{
-    border:none;
-    border-top:1px solid #dddddd;
-    margin:30px 0;
-}
-
-@media (max-width:600px){
-
-.card{
+.house{
+    background:white;
+    border-radius:38px;
     padding:22px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
 }
 
-nav{
+/* Roof */
+
+.roof{
+    height:140px;
+    background:#a85a3d;
+    clip-path:polygon(50% 0%,100% 100%,0% 100%);
+    border-radius:18px;
+    position:relative;
+}
+
+.house-title{
+    position:absolute;
+    left:50%;
+    top:70%;
+    transform:translate(-50%,-50%);
+    background:#8b4f38;
+    color:white;
+    padding:12px 34px;
+    border-radius:40px;
+    font-size:24px;
+}
+
+/* ---------- Rooms ---------- */
+
+.rooms{
+    margin-top:18px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.room{
+    background:#faf8f2;
+    border-radius:24px;
+    text-align:center;
+    padding:28px 12px;
+    text-decoration:none;
+    color:#2f3b2f;
+    transition:.25s;
+    min-height:190px;
     display:flex;
     flex-direction:column;
-    gap:12px;
+    justify-content:center;
 }
 
-h1{
+.room:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,.10);
+}
+
+.room-icon{
+    font-size:46px;
+}
+
+.room-title{
+    margin-top:14px;
     font-size:28px;
+    font-weight:bold;
 }
 
+.room-note{
+    margin-top:8px;
+    font-size:18px;
+    color:#666;
 }
 
-.subtitle{
-    font-size: 1.4rem;
-    text-align: center;
-    color: #2f6b3b;
-    margin-top: -10px;
-    margin-bottom: 25px;
-    font-style: italic;
+/* ---------- Entrance ---------- */
+
+.entrance{
+    display:block;
+    width:320px;
+    margin:28px auto 8px;
+    background:#9a603f;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    padding:24px;
+    border-radius:0 0 35px 35px;
 }
 
-.box p{
-    line-height: 1.9;
-    text-align: center;
-    font-size: 1.08rem;
+.entrance-title{
+    font-size:32px;
 }
 
-.tagline{
+.entrance-note{
+    margin-top:8px;
+    font-size:18px;
+}
 
-text-align:center;
+/* ---------- Footer ---------- */
 
-font-size:18px;
+footer{
+    text-align:center;
+    padding:40px 0;
+    color:#777;
+}
 
-letter-spacing:2px;
+/* ---------- Mobile ---------- */
 
-color:#6b7280;
+@media(max-width:700px){
 
-margin-top:-10px;
+.hero h1{
+    font-size:44px;
+}
 
-margin-bottom:30px;
+.hero-text{
+    font-size:18px;
+}
+
+.rooms{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.room{
+    min-height:150px;
+}
+
+.room-title{
+    font-size:22px;
+}
+
+.entrance{
+    width:240px;
+}
 
 }
